@@ -15,7 +15,7 @@ public class Function
 {
     private static readonly IAmazonSimpleNotificationService _snsClient = new AmazonSimpleNotificationServiceClient();
 
-    private static readonly string SNS_TOPIC_ARN = "crie seu alerta SNS";
+    private static readonly string SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:645443785286:snsalerta";
 
     private static readonly int PRECIPITATION_PROBABILITY_THRESHOLD = int.Parse(Environment.GetEnvironmentVariable("PRECIPITATION_PROBABILITY") ?? "0");
     private static readonly int WIND_SPEED_THRESHOLD = int.Parse(Environment.GetEnvironmentVariable("WIND_SPEED") ?? "0");
